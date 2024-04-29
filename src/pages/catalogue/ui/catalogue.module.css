@@ -1,0 +1,15 @@
+@import url('../../../shared/styles/variables.css');
+
+.catalogue {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    background-color: var(--surfaceContainerLow);
+    text-align: center;
+}

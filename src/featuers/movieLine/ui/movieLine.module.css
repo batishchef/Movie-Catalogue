@@ -1,0 +1,10 @@
+@import url('../../../shared/styles/variables.css');
+
+.movieLine {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
+    grid-auto-flow: row;
+}

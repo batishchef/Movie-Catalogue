@@ -1,0 +1,13 @@
+@import url('../../../shared/styles/variables.css');
+
+.movieCarousel {
+    width: 100%;
+    margin-top: calc(var(--ui-step) * 25);
+    padding: calc(var(--ui-step) * 4);
+    overflow: hidden;
+    background-color: var(--surfaceContainer);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center; */
+}

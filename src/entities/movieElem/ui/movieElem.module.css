@@ -1,0 +1,62 @@
+@import url('../../../shared/styles/variables.css');
+
+.movieElem {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: all .2s ease-in-out; 
+
+    &:hover {
+        transform: scale(1.1); 
+    }
+}
+
+.movieElemSketelon {
+    width: 12vw;
+    height: 20vw;
+    background-color: gray;
+    animation: skeleton-loading 1s linear infinite alternate;
+    border-radius: calc(var(--ui-step) * 5);
+}
+
+@keyframes skeleton-loading {
+    0% {
+      background-color: hsl(0, 0%, 82%);
+    }
+    100% {
+      background-color: hsl(0, 0%, 91%);
+    }
+  }
+
+.ratingCircle {
+    display: flex;
+    width: calc(var(--ui-step) * 10);
+    height: calc(var(--ui-step) * 10);
+    margin-left: calc(var(--ui-step) * 2);
+    margin-top: calc(var(--ui-step) * 2);
+    margin-bottom: calc(var(--ui-step) * -12);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--tertiary);
+    border-radius: 50px;
+}
+
+.rating {
+    color: var(--onTertiary)
+}
+
+.img {
+    display: block;
+    width: calc(var(--ui-step) * 50);
+    height: auto;
+    border-radius: calc(var(--ui-step) * 5);
+
+}
+
+.title {
+ margin: 0 0 0 var(--ui-step);
+ font-size: calc(var(--ui-step) * 5);
+ color: var(--onSurface);
+}
